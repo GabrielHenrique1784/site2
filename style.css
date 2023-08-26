@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2600ff;
+}
+
+body {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.1rem 0.5rem #000000;
+  width: 100%;
+  background: var(--black);
+  transition: all 0.5s;
+  position: fixed;
+}
+
+.navigation .logo {
+  color: var(--blue);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--white);
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: var(--blue);
+}
+
+
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+
+.home-text {
+  max-width: 37rem;
+  text-align: left;
+  margin-top: 40%;
+}
+
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.home-text p {
+  margin-bottom: 4rem;
+}
+
+.home-img img {
+  width: 100%;
+  
+  animation: spin 2s linear;
+}
+
+
+
+.second-main {
+  background-color: var(--black);
+  text-align: center;
+  animation-duration: 9s;
+}
+
+
+
+.titulo-noticia {
+  color: var(--white);
+  margin-left: 6rem;
+}
+
+.titulo-noticia span {
+  color: var(--blue);
+}
+
+hr {
+  align-items: center;
+
+}
+
+.second-main .titulo-noticia {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+
+}
+
+.notice-block1 {
+  width: 800px;
+  height: 300px;
+  display: inline-block;
+  border: 2px solid var(--blue);
+  background-image: url(https://www.dmarge.com/wp-content/uploads/2023/03/dj-khaled-boss-1280x720-1-1200x800.jpg);
+  margin-top: 90px;
+  background-size: cover;
+
+}
+
+.notice-block2 {
+  width: 800px;
+  height: 300px;
+  display: inline-block;
+  border: 2px solid var(--blue);
+  background-image: url(https://uploads.metropoles.com/wp-content/uploads/2021/01/26192515/GettyImages-1298728594.jpg);
+  background-size: cover;
+}
+
+.notice-block3 {
+  width: 800px;
+  height: 300px;
+  display: inline-block;
+  border: 2px solid var(--blue);
+  background-image: url(https://a.espncdn.com/photo/2022/0511/r1011583_1296x729_16-9.jpg);
+  background-size: cover;
+
+}
+
+.notice-blocks {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.transfer-notice-button {
+  color: var(--white);
+  text-align: left;
+  background: none;
+  box-shadow: var(--black);
+  text-align-last: left;
+  border-color: 4px #000000;
+  border: 6px solid var(--black);
+}
+
+.placares-notice-button {
+  color: var(--white);
+  text-align: left;
+  background: none;
+  box-shadow: var(--black);
+  text-align-last: left;
+  border-color: 4px #000000;
+  border: 6px solid var(--black);
+}
+
+.titulos-notice-button {
+  color: var(--white);
+  text-align: left;
+  background: none;
+  box-shadow: var(--black);
+  text-align-last: left;
+  border-color: 4px #000000;
+  border: 6px solid var(--black);
+}
+
+
+.transfer-notice-button :hover {
+  text-shadow: 5px #000000;
+  transition: 4s;
+  text-decoration: underline var(--blue);
+}
+
+.placares-notice-button :hover {
+  text-shadow: 5px #000000;
+  transition: 4s;
+  text-decoration: underline var(--blue);
+}
+
+.titulos-notice-button :hover {
+  text-shadow: 5px #000000;
+  transition: 4s;
+  text-decoration: underline var(--blue);
+}
+
+.noticias {
+  background-color: var(--black);
+  text-align: center;
+
+}
+
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 13%;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 1.5s;
+}
+
+.slide img {
+  width: 800px;
+
+
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -25%;
+}
+
+#radio3:checked~.first {
+  margin-left: -50%;
+}
+
+#radio4:checked~.first {
+  margin-left: -75%;
+}
+
+.navigation-auto div {
+  border: 2px solid var(--blue);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background-color: white;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background-color: white;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background-color: white;
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+  margin-left: -40px;
+  text-align: left;
+  margin-top: -300px;
+}
+
+.text-h1 :hover {
+  color: var(--black);
+  transition: 2s;
+}
+
+.texto-inicial {
+  margin-left: -40px;
+  display: flex;
+}
+
+.conteudo-transfer {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.img-djkhaled {
+  width: 70%;
+  display: flex;
+
+  margin-right: -130px;
+  margin-left: 100px;
+  align-items: center;
+  border: 2px solid var(--blue);
+}
+
+.titulo-transfer {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.img-denzel {
+  width: 60%;
+  display: flex;
+
+  margin-right: 17%;
+  margin-left: 20%;
+  align-items: center;
+  border: 2px solid var(--blue);
+}
+
+.titulos-h1 {
+
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+  margin-top: 440%;
+}
+
+.transfer-img img {
+  width: 100%;
+  margin-top: 5%;
+  
+  animation: spin 2s linear;
+}
+
+.seriea {
+
+
+  width: 60%;
+  display: flex;
+  margin-right: 17%;
+  margin-left: 20%;
+  align-items: center;
+  border: 2px solid var(--blue);
+  
+
+}
+
+.home-lukaku img {
+  margin-top: 0%;
+  width: 125%;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
